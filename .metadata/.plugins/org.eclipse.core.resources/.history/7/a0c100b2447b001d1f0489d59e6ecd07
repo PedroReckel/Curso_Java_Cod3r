@@ -1,0 +1,31 @@
+package fundamentos;
+
+public class TipoString {
+
+	public static void main(String[] args) {
+		
+		String s = "Bom dia";
+		System.out.println(s);
+		System.out.println(s.charAt(0));
+		System.out.println(s.toLowerCase().contains("Bom"));
+		System.out.println(s.length());
+		System.out.println(s.toLowerCase().equals("bom dia"));
+		System.out.println(s.equalsIgnoreCase("bom dia")); // Para não considerar o maiusculas e minusculas
+		System.out.println(s.startsWith("Bom"));
+		System.out.println(s.toUpperCase().endsWith("Dia"));
+		
+		var nome = "Pedro";
+		var sobrenome = "Reckel";
+		var idade = 21;
+		var salario = 18779.99;
+		
+		System.out.printf("O %s %s tem %d anos e ganha R$%.2f", nome, sobrenome, idade, salario);
+		
+		String frase = String.format("\nO %s %s tem %d anos e ganha R$%.2f", nome, sobrenome, idade, salario);
+		System.out.println(frase);
+		
+		System.out.println("Frase qualquer".contains("Frase qualquer"));
+		
+	}
+	
+}
