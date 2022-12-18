@@ -1,0 +1,15 @@
+package fundamentos;
+
+public class ConversaoTipoPrimitivoNumerico {
+
+	public static void main(String[] args) {
+		
+		double a = 1; // Conversão do tipo implícita
+		System.out.println(a);
+		
+		float b = (float) 1.12342139999999999;
+		System.out.println(b);
+		
+	}
+	
+}
