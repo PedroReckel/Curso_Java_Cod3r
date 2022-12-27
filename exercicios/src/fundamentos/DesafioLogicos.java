@@ -7,12 +7,12 @@ public class DesafioLogicos {
 		boolean trabalho2 = true;
 		boolean tv50 = trabalho1 && trabalho2;
 		boolean tv32 = trabalho1 ^ trabalho2;
-		boolean comprouNada = tv50 || tv32;
-		boolean sorvete = comprouNada;
+		boolean comprouTv = tv50 || tv32;
+		boolean sorvete = comprouTv;
 		
 		System.out.println("Comprou 50? " + tv50);
 		System.out.println("Comprou 32? " + tv32);
-		System.out.println("Comprou alguma TV? " + comprouNada);
+		System.out.println("Comprou alguma TV? " + comprouTv);
 		System.out.println("Tomou sorvete? " + sorvete);
 		System.out.println("Mais saudável? " + !sorvete);
 		
