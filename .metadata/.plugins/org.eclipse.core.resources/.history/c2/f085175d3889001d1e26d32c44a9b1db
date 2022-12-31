@@ -1,0 +1,23 @@
+package fundamentos;
+
+import javax.swing.JOptionPane;
+
+public class DesafioCalculadora {
+
+	public static void main(String[] args) {
+		// Ler o numero1
+		// Ler o numero2
+		// + - * /
+		String valor1 = JOptionPane.showInputDialog("Digite o primeiro número:");
+		String valor2 = JOptionPane.showInputDialog("Digite o segundo número:");
+		
+		double num1 = Double.parseDouble(valor1);
+		double num2 = Double.parseDouble(valor2);
+		
+		String operador = JOptionPane.showInputDialog("Digite o operador:");
+
+		System.out.println(num1 + operador + num2);
+	
+	}
+	
+}
