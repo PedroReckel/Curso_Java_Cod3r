@@ -1,0 +1,25 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+	// Notas validas: >= 0 && <= 10 
+	// Sair: -1
+	
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		double nota;
+		int contaNotas;
+		String sair = "";
+		
+		do {
+			System.out.println("Digite uma nota");
+			nota = entrada.nextDouble();
+			System.out.println("Para sair digite '-1'");
+			sair = entrada.next();
+;		} while(!sair.equalsIgnoreCase("-1"));
+		
+	}
+	
+}
