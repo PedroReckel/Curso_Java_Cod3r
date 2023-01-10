@@ -1,0 +1,23 @@
+package desafios_controle;
+
+import java.util.Scanner;
+
+public class NumeroPrimoSwitch {
+
+	public static void main(String[] args) {
+		
+		int contDiv = 0;
+		
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Digite um numero:");
+		int num = entrada.nextInt();
+		
+		for(int i = 0; i > num; i++) {
+			
+		}
+		
+		entrada.close();
+		
+	}
+	
+}

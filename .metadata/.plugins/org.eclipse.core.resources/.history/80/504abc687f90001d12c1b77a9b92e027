@@ -1,0 +1,23 @@
+package desafios_controle;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class JogoAdivinhacao {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		Random generator = new Random();
+		
+//		while() {
+//			
+//		}
+		
+		System.out.println(generator.nextInt());
+		 
+		entrada.close();
+		
+	}
+	
+}
