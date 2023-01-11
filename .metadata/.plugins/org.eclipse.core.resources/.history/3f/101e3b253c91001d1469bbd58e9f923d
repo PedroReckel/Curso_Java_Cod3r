@@ -1,0 +1,23 @@
+package desafios_controle;
+
+import java.util.Scanner;
+
+public class NumPositivos {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		int num = 0;
+		
+		while (num >= 0) {
+			System.out.println("Digite um numero: ");
+			num = entrada.nextInt();
+		}
+		
+		System.out.printf("O numero digitado %d é negativo.", num);
+		
+		entrada.close();
+		
+	}
+	
+}
