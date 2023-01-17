@@ -4,7 +4,10 @@ public class ProdutoTeste {
 
 	public static void main(String[] args) {
 		
-		Produto p1 = new Produto("Notebook", 4899.99, 0.25);
+		Produto p1 = new Produto();
+		p1.nome = "Notebook";
+		p1.preco = 4899.99;
+		p1.desconto = 0.25;
 		
 		var p2 = new Produto();
 		p2.nome = "Galaxy S22 Ultra";

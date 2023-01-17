@@ -1,0 +1,18 @@
+package classe;
+
+public class Data {
+
+	int dia;
+	int mes;
+	int ano;
+	
+	String diaDeHoje() {
+		return "O dia de hoje é " + dia + "/" + mes + "/" + ano;
+	}
+	
+	String diaAniversario() {
+		return "O dia em que eu nasci foi " + dia + "/" + mes + "/" + ano;
+	}
+	
+	
+}

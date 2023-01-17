@@ -4,7 +4,7 @@ public class DataTeste {
 	
 	public static void main(String[] args) {
 		
-		Data day1 = new Data();
+		Data day1 = new Data(16, 1, 2023);
 		
 		System.out.println(day1.diaDeHoje());
 		
