@@ -1,0 +1,8 @@
+package desafio_classe_professor;
+
+public class Comida {
+
+	String nome;
+	double peso;
+	
+}

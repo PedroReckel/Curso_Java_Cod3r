@@ -1,0 +1,12 @@
+package desafio_classe;
+
+public class Pessoa {
+
+	String nomePessoa = "";
+	double pesoPessoa;
+	
+	void comer(Comida comida1) {
+		
+	}
+
+}
