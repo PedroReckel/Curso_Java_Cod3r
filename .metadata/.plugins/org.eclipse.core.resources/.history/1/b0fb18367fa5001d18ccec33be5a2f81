@@ -1,0 +1,22 @@
+package arrays;
+
+import java.util.Scanner;
+
+public class DesafioArray {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite a quantidade de notas que o aluno tem: ");
+		int qtdNotas = entrada.nextInt();
+		
+		for(int i = 0; i >= qtdNotas; i++) {
+			System.out.println("Digite a " + i + "° nota: ");
+		}
+		
+		entrada.close();
+		
+	}
+	
+}
