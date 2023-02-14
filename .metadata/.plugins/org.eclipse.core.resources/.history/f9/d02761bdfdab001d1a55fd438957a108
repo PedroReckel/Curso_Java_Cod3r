@@ -14,10 +14,10 @@ public class Usuario {
 		return "Meu nome é " + this.nome + ".";
  	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(nome);
-	}
+//	@Override
+//	public int hashCode() {
+//		return Objects.hash(nome);
+//	}
 
 	@Override
 	public boolean equals(Object obj) {
