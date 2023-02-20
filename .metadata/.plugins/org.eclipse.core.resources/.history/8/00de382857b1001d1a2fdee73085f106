@@ -1,0 +1,15 @@
+package oo.desafio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+
+	final String nome;
+	final List<Compra> compras = new ArrayList<>();
+	
+	Cliente() {
+		
+	}
+	
+}

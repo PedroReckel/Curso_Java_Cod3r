@@ -1,0 +1,8 @@
+package oo.desafio;
+
+public class Item {
+
+	final int quantidade;
+	Produto produto;
+	
+}
