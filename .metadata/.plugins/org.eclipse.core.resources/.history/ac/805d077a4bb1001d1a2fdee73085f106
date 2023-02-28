@@ -1,8 +1,0 @@
-package oo.desafio;
-
-public class Item {
-
-	double quantidade;
-	Produto produto;
-	
-}
