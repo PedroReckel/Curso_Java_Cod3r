@@ -1,0 +1,13 @@
+package oo.heranca.desafio01;
+
+public class Ferrari extends Carro {
+	
+	@Override
+	void acelerar() {
+		velocidadeAtual += 40;
+	}
+	
+	void freiar() {
+		velocidadeAtual -= 25;
+	}
+}

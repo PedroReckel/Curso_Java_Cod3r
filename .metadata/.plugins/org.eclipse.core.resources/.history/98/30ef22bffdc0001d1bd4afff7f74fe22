@@ -1,0 +1,21 @@
+package oo.heranca.desafio01;
+
+public class Carro {
+
+	double velocidadeAtual = 0;
+	
+	boolean acelerar(double velocidade) {
+		this.velocidadeAtual += velocidade;
+		return true;
+	}
+	
+	boolean frear(double forca) {
+		if (this.velocidadeAtual <= 0) {
+			return false;
+		} else {
+			this.velocidadeAtual -= forca;
+			return true;
+		}
+	}
+ 	
+}

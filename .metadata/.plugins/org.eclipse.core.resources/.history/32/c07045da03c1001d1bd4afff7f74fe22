@@ -1,0 +1,15 @@
+package oo.heranca.desafio01;
+
+public class Mazda extends Carro {
+
+	@Override
+	void acelerar() {
+		velocidadeAtual += 50;
+	}
+	
+	@Override
+	void frear() {
+		velocidadeAtual -= 35;
+	}
+	
+}

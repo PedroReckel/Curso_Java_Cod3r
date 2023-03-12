@@ -1,0 +1,14 @@
+package oo.heranca.desafio01;
+
+public class Ferrari extends Carro {
+	
+	void acelerar() {
+		super.acelerar();
+		super.acelerar();
+		super.acelerar();
+		super.acelerar();
+		super.acelerar();
+		super.frear();
+		super.frear();
+	}
+}

@@ -1,0 +1,23 @@
+package oo.heranca.desafio01;
+
+public class Mazda extends Carro {
+
+	Mazda(int velocidadeAtual) {
+		super(velocidadeAtual);
+	}
+	
+	@Override
+	void acelerar() {
+		velocidadeAtual += 15;
+	}
+	
+	@Override
+	void frear() {
+		if (velocidadeAtual >= 10) {
+			velocidadeAtual -= 10;
+		} else {
+			velocidadeAtual = 0;
+		}
+	}
+	
+}

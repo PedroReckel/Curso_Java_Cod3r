@@ -1,0 +1,23 @@
+package oo.heranca.desafio01;
+
+public class Ferrari extends Carro {
+	
+	Ferrari(int velocidadeMaxima) {
+		super(velocidadeMaxima);
+		delta = 15;
+	}
+	
+	@Override
+	void acelerar() {
+		velocidadeAtual += 50;
+	}
+	
+	@Override
+	void frear() {
+		if (velocidadeAtual >= 35) {
+			velocidadeAtual -= 35;
+		} else {
+			velocidadeAtual = 0;
+		}
+	}
+}

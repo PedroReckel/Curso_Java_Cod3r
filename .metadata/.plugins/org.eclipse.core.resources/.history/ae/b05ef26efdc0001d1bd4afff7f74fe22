@@ -1,0 +1,19 @@
+package oo.heranca.desafio01;
+
+public class Pista {
+
+	public static void main(String[] args) {
+		
+		Carro mazda = new Mazda();
+		mazda.acelerar(15);
+		mazda.acelerar(15);
+		mazda.acelerar(15);
+		
+		System.out.println(mazda.velocidadeAtual);
+		
+		mazda.frear();
+		
+		System.out.println(mazda.velocidadeAtual);
+	}
+	
+}

@@ -4,29 +4,28 @@ public class Jogo {
 
 	public static void main(String[] args) {
 		
-		Jogador j1 = new Jogador();
-		j1.x = 10;
-		j1.y = 10;
+		Monstro mostro = new Monstro();
+		mostro.x = 10;
+		mostro.y = 10;
 		
-		Heroi j2 = new Heroi();
-		j2.x = 10;
-		j2.y = 11;
+		Heroi heroi = new Heroi(10, 11);
 		
-		Monstro j3 = new Monstro();
-		j3.x = 11;
-		j3.y = 10;
+		System.out.println("Mostro tem " + mostro.vida + " de vida");		
+		System.out.println("Heroi tem " + heroi.vida + " de vida");		
 		
-		System.out.println(j1.vida);
-		System.out.println(j2.vida);		
-		System.out.println(j3.vida);		
+		mostro.atacar(heroi);
+		heroi.atacar(mostro);
 		
-		j1.atacar(j2);
-		j2.atacar(j1);
-		j2.atacar(j3);
+		mostro.atacar(heroi);
+		heroi.atacar(mostro);
 		
-		System.out.println(j1.vida);
-		System.out.println(j2.vida);
-		System.out.println(j3.vida);
+//		heroi.andar(Direcao.NORTE);
+		mostro.atacar(heroi);
+		heroi.atacar(mostro);
+		heroi.atacar(mostro);
+		
+		System.out.println("Mostro tem " + mostro.vida + " de vida");		
+		System.out.println("Heroi tem " + heroi.vida + " de vida");		
 		
 	}
 	
