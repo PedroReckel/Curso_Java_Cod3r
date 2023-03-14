@@ -2,7 +2,7 @@ package oo.heranca.desafio01;
 
 public class Mazda extends Carro {
 	
-	Mazda() {
+	public	Mazda() {
 		super(180);
 		delta = 15;
 	}
@@ -13,7 +13,7 @@ public class Mazda extends Carro {
 //	}
 	
 	@Override
-	void frear() {
+	public void frear() {
 		if (velocidadeAtual >= 10) {
 			velocidadeAtual -= 10;
 		} else {

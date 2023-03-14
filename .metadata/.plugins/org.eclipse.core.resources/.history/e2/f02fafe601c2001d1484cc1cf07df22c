@@ -1,0 +1,19 @@
+package oo.polomorfismo;
+
+public class Sorvete {
+
+	private double peso;
+
+	public Sorvete() {
+		
+	}
+	
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		if(peso >= 0)
+		this.peso = peso;
+	}
+}

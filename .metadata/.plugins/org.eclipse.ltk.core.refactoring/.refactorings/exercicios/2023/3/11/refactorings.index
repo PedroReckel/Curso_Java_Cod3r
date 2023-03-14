@@ -1,3 +1,8 @@
 1678639361351	Rename local variable 'j2'
 1678639375266	Rename local variable 'j3'
 1678640236584	Delete element
+1678746852274	Delete element
+1678746895089	Rename package 'oo.encapsulamento.casaA'
+1678747025194	Rename package 'oo.encapsulamento'
+1678748515260	Move compilation unit
+1678748528019	Move compilation unit
