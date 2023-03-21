@@ -1,0 +1,9 @@
+package oo.polomorfismo.dinamico;
+
+public class Arroz extends Comida {
+
+	public double Arroz() {
+		super();
+	}
+	
+}

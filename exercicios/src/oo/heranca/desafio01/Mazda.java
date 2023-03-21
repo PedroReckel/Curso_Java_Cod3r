@@ -2,7 +2,7 @@ package oo.heranca.desafio01;
 
 public class Mazda extends Carro {
 	
-	public	Mazda() {
+	public Mazda() {
 		super(180);
 		delta = 15;
 	}

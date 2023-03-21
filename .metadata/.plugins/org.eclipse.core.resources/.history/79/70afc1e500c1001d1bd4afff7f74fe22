@@ -1,8 +1,0 @@
-package oo.heranca.desafio01;
-
-public class Ferrari extends Carro {
-	boolean acelarou1 = super.acelerar();
-	boolean acelarou2 = super.acelerar();
-	boolean acelarou3 = super.acelerar();
-	return acelarou1 || acelarou2 || acelarou3;
-}

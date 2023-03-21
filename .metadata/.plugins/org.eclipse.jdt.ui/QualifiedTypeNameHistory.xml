@@ -29,4 +29,12 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="oo.encapsulamento.casaA.Ana"/>
+    <fullyQualifiedTypeName name="oo.heranca.Monstro"/>
+    <fullyQualifiedTypeName name="oo.heranca.Heroi"/>
+    <fullyQualifiedTypeName name="oo.heranca.desafio01.Mazda"/>
+    <fullyQualifiedTypeName name="oo.heranca.desafio01.Ferrari"/>
+    <fullyQualifiedTypeName name="java.security.cert.CertificateNotYetValidException"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="oo.heranca.desafio01.Esportivo"/>
+    <fullyQualifiedTypeName name="oo.composicao.Carro"/>
 </qualifiedTypeNameHistroy>

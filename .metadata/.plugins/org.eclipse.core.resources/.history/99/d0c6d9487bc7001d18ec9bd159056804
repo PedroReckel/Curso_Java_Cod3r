@@ -1,0 +1,5 @@
+package oo.heranca.desafio01;
+
+public interface Esportivo {
+
+}

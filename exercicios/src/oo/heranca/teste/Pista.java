@@ -40,6 +40,9 @@ public class Pista {
 		ferrari.acelerar();
 		ferrari.acelerar();
 		ferrari.acelerar();
+		ferrari.ligarTurbo();
+		ferrari.ligarAr();
+		ferrari.desligarAr();
 		
 		System.out.println("A velocidade da Ferrar F40 é de " + ferrari.velocidadeAtual + " KM/H");
 		
