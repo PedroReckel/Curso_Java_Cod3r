@@ -44,6 +44,8 @@ public class Pista {
 		ferrari.ligarAr();
 		ferrari.desligarAr();
 		
+		System.out.println(ferrari.velocidadeDoAr());
+		
 		System.out.println("A velocidade da Ferrar F40 é de " + ferrari.velocidadeAtual + " KM/H");
 		
 		ferrari.frear();
