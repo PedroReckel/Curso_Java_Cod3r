@@ -1,0 +1,9 @@
+package lambdas;
+
+public interface Multiplicar {
+
+	default double executar(double a, double b) {
+		return a + b;
+	}
+	
+}

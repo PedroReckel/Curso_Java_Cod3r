@@ -1,0 +1,9 @@
+package lambdas;
+
+public interface Somar {
+
+	default double executar(double a, double b) {
+		return a + b;
+	}
+	
+}

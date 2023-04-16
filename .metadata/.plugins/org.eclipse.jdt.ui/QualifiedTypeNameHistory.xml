@@ -37,4 +37,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="oo.heranca.desafio01.Esportivo"/>
     <fullyQualifiedTypeName name="oo.composicao.Carro"/>
+    <fullyQualifiedTypeName name="oo.abstrato.Animal"/>
+    <fullyQualifiedTypeName name="oo.abstrato.Mamifero"/>
 </qualifiedTypeNameHistroy>
