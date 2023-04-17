@@ -1,0 +1,13 @@
+package lambdas;
+
+import java.util.function.BinaryOperator;
+
+public class Predicado {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

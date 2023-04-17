@@ -1,0 +1,17 @@
+package lambdas;
+
+public class Produto {
+
+	final String nome;
+	final double price;
+	final double desconto;
+	
+	public Produto(String nome, double price, double desconto) {
+		this.nome = nome;
+		this.price = price;
+		this.desconto = desconto;
+	}
+	
+	
+	
+}

@@ -1,0 +1,9 @@
+package lambdas;
+
+import java.util.function.Function;
+
+public class Funcao {
+
+	Function<Integer, String> parOuImpar = numero -> numero % 2 == 0 ? "Par" : "Ímpar";
+	
+}
