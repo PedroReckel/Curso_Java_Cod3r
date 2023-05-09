@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
+//	O Stream permite manipular coleções de dados de forma mais expressiva e funcional, e oferece diversas operações que 
+//	podem ser encadeadas para realizar transformações e filtragens dos dados. Nesse código específico, o Stream é 
+//	utilizado principalmente para realizar operações de iteração e impressão dos elementos das coleções.
+
 public class CriandoStreams {
 
 	public static void main(String[] args) {
