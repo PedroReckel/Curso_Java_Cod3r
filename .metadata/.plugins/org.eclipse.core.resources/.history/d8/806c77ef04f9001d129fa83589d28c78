@@ -1,0 +1,34 @@
+package streamAPI;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class DesafioFilter2 {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto("Galaxy S23", 8000, 60, false);
+		Produto p2 = new Produto("Notebook Gamer", 5000, 50, true);
+		Produto p3 = new Produto("Xiaomi Mi12T", 2000, 30, true);
+		Produto p4 = new Produto("Iphone 14 pro", 9000, 40, false);
+		Produto p5 = new Produto("GoPro Hero 10", 4000, 30, true);
+		Produto p6 = new Produto("Teclado Mecanico", 600, 30, true);
+		
+		List<Produto> produtos = Arrays.asList(p1, p2, p3, p4, p5, p6);
+		
+		Predicate<Produto> desconto = a -> a.desconto > 30;
+		Function<Produto, String> bomDesconto = a -> "O produto " + a.nome + " tem desconto de " + a.desconto + "%";
+		
+		produtos.stream()
+			.filter(desconto)
+			.map(bomDesconto)
+			.forEach(System.out::println);
+		
+	}
+	
+}
+
+// Mostrar todos os produtos que estão com desconto maior que 30% (Super promossão) -> Filtro 1
+// E os produtos que tem frete gratis -> Filtro 2

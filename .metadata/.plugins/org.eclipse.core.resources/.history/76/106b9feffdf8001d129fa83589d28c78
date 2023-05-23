@@ -1,0 +1,15 @@
+package streamAPI;
+
+public class DesafioFilter {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}
+
+// Criar duas funções lambdas;
+// Fazer dois filtros diferentes;
+// Usar um map no final;

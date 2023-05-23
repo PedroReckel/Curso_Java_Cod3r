@@ -1,0 +1,16 @@
+package streamAPI;
+
+public class Carro {
+
+	final String modelo;
+	final double preco;
+	final double distancia;
+	
+	public Carro(String modelo, double preco, double distancia) {
+		super();
+		this.modelo = modelo;
+		this.preco = preco;
+		this.distancia = distancia;
+	}
+		
+}
