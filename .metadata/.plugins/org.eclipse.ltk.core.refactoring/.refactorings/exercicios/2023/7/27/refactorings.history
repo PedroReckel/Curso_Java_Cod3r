@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Aluno.java&apos; to &apos;exercicios/src/excecao&apos;&#x0D;&#x0A;- Original project: &apos;exercicios&apos;&#x0D;&#x0A;- Destination element: &apos;exercicios/src/excecao&apos;&#x0D;&#x0A;- Original element: &apos;streamAPI.Aluno.java&apos;" description="Copy compilation unit" destination="/src&lt;excecao" element1="/src&lt;streamAPI{Aluno.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1688435627622" units="1" version="1.0"/>
+</session>
