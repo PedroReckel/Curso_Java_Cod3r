@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="javax.swing.JButton"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="desafios_controle.MaiorNumero"/>
     <fullyQualifiedTypeName name="classe.AreaCirc"/>
@@ -52,8 +48,16 @@
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java.util.function.BinaryOperator"/>
-    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="oo.composicao.Aluno"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+    <fullyQualifiedTypeName name="excecao.Aluno"/>
+    <fullyQualifiedTypeName name="excecao.personalizadaA.NumeroForaIntervaloException"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="excecao.personalizadaB.StringVaziaException"/>
+    <fullyQualifiedTypeName name="excecao.personalizadaB.NumeroForaIntervaloException"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 </qualifiedTypeNameHistroy>
