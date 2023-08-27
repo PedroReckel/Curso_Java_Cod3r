@@ -10,7 +10,6 @@ INDEX VERSION 1.131+C:\Users\pedro\Documents\Curso_Java_Cod3r\.metadata\.plugins
 1856110136.index
 4222164532.index
 346885973.index
-1472247899.index
 2723953503.index
 2960468567.index
 313827559.index
