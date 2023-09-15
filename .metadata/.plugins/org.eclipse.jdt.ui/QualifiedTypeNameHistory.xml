@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="oo.heranca.desafio01.Mazda"/>
     <fullyQualifiedTypeName name="oo.heranca.desafio01.Ferrari"/>
     <fullyQualifiedTypeName name="java.security.cert.CertificateNotYetValidException"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="oo.heranca.desafio01.Esportivo"/>
     <fullyQualifiedTypeName name="oo.composicao.Carro"/>
     <fullyQualifiedTypeName name="oo.abstrato.Animal"/>
@@ -48,7 +47,6 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
     <fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
@@ -57,7 +55,9 @@
     <fullyQualifiedTypeName name="br.com.epsilon.cm.excecao.SairException"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.TabuleiroConsole"/>
-    <fullyQualifiedTypeName name="br.com.epsilon.cm.excecao.ExplosaoException"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.Tabuleiro"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.cm.excecao.ExplosaoException"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.TabuleiroConsole"/>
 </qualifiedTypeNameHistroy>

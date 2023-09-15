@@ -2,6 +2,6 @@ package br.com.epsilon.cm.excecao;
 
 public class SairException extends RuntimeException {
 
-	private static final long serialVersionUID = 1;
+	private static final long serialVersionUID = 1L;
 	
 }

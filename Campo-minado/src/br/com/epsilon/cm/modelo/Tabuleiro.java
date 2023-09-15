@@ -1,7 +1,6 @@
 package br.com.epsilon.cm.modelo;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -22,42 +21,26 @@ public class Tabuleiro {
 		
 		gerarCampos();
 		associarVizinhos();
-		sortearMinas();		
+		sortearMinas();
 	}
-	
+
 	public void abrir(int linha, int coluna) {
 		try {
 			campos.parallelStream()
 			.filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
 			.findFirst()
 			.ifPresent(c -> c.abrir());
-		} catch (ExplosaoException e) {
+		} catch(ExplosaoException e) {
 			campos.forEach(c -> c.setAberto(true));
 			throw e;
 		}
 	}
-
+	
 	public void alternarMarcacao(int linha, int coluna) {
 		campos.parallelStream()
 			.filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
 			.findFirst()
 			.ifPresent(c -> c.alternarMarcacao());
-	}
-
-	private void gerarCampos() {
-		for (int l = 0; l < linhas; l++) {
-			for (int c = 0; c < colunas; c++) {
-				campos.add(new Campo(l, c));
-			}
-		}
-	}
-	
-	private void associarVizinhos() {
-		for (Campo c1: campos) {
-			for (Campo c2: campos) {
-				c1.adicionarVizinho(c2);
-			}
-		}
 	}
 	
 	private void sortearMinas() {
@@ -65,14 +48,30 @@ public class Tabuleiro {
 		Predicate<Campo> minado = c -> c.isMinado();
 		
 		do {
-			int aleatorio = (int) (Math.random() * campos.size()); // Casting da mutiplicação de double para int.
+			int aleatorio = (int)(Math.random() * campos.size()); // Casting da multiplicação de double para int.
 			campos.get(aleatorio).minar();
 			minasArmadas = campos.stream().filter(minado).count();
 		} while(minasArmadas < minas);
 	}
+
+	private void associarVizinhos() {
+		for(Campo c1: campos) {
+			for(Campo c2: campos) {
+				c1.adicionarVizinho(c2);
+			}
+		}
+	}
+
+	private void gerarCampos() {
+		for(int l = 0; l < linhas; l++) {
+			for(int c = 0; c < colunas; c++) {
+				campos.add(new Campo(l,c));
+			}
+		}
+	}
 	
 	public boolean objetivoAlcancado() {
-		return campos.stream().allMatch(c -> c.objetivoAlcancado()); // Se todos os campos tem o objetivo alcancado significa que vc venceu
+		return campos.stream().allMatch(c -> c.objetivoAlcancado()); // Se todos os campos tem o objetivo alcançado significa que vc venceu	
 	}
 	
 	public void reiniciar() {
@@ -83,7 +82,7 @@ public class Tabuleiro {
 	public String toString() {
 		StringBuilder sb = new StringBuilder(); // Sempre que tiver uma quantidade grande de concatenação o StringBuilder é uma classe interessante para isso.
 		
-		sb.append("  "); 
+		sb.append(" ");
 		for(int c = 0; c < colunas; c++) {
 			sb.append(" ");
 			sb.append(c);
@@ -92,10 +91,10 @@ public class Tabuleiro {
 		sb.append("\n");
 		
 		int i = 0;
-		for (int l = 0; l < linhas; l++) {
+		for(int l = 0; l < colunas; l++) {
 			sb.append(l);
 			sb.append(" ");
-			for (int c = 0; c < colunas; c++) {
+			for(int c = 0; c < colunas; c++) {
 				sb.append(" ");
 				sb.append(campos.get(i));
 				sb.append(" ");

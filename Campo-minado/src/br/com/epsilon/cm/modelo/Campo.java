@@ -71,7 +71,6 @@ public class Campo {
 	
 	void minar() {
 		minado = true;
-
 	}
 	
 	public boolean isMinado() {
@@ -81,23 +80,23 @@ public class Campo {
 	public boolean isMarcado() {
 		return marcado;
 	}
-		
+	
 	void setAberto(boolean aberto) {
 		this.aberto = aberto;
 	}
-
+	
 	public boolean isAberto() {
 		return aberto;
 	}
-
+	
 	public boolean isFechado() {
 		return !isAberto();
 	}
-
+	
 	public int getLinha() {
 		return linha;
 	}
-
+	
 	public int getColuna() {
 		return coluna;
 	}
@@ -105,7 +104,7 @@ public class Campo {
 	public List<Campo> getVizinhos() {
 		return vizinhos;
 	}
-
+	
 	boolean objetivoAlcancado() {
 		boolean desvendado = !minado && aberto;
 		boolean protegido = minado && marcado;
@@ -127,7 +126,7 @@ public class Campo {
 			return "x";
 		} else if(aberto && minado) {
 			return "*";
-		} else if(aberto && minasNaVizinhaca() > 0){
+		} else if(aberto && minasNaVizinhaca() > 0) {
 			return Long.toString(minasNaVizinhaca());
 		} else if(aberto) {
 			return " ";
