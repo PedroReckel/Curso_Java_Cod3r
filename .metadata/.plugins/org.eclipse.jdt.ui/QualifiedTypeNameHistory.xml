@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.awt.event.FocusAdapter"/>
     <fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.TabuleiroConsole"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.excecao.SairException"/>
+    <fullyQualifiedTypeName name="generics.Caixa"/>
+    <fullyQualifiedTypeName name="generics.CaixaNumero"/>
 </qualifiedTypeNameHistroy>
