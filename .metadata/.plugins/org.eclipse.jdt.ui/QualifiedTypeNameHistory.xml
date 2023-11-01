@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="oo.heranca.desafio01.Ferrari"/>
-    <fullyQualifiedTypeName name="java.security.cert.CertificateNotYetValidException"/>
-    <fullyQualifiedTypeName name="oo.heranca.desafio01.Esportivo"/>
     <fullyQualifiedTypeName name="oo.composicao.Carro"/>
     <fullyQualifiedTypeName name="oo.abstrato.Animal"/>
     <fullyQualifiedTypeName name="oo.abstrato.Mamifero"/>
     <fullyQualifiedTypeName name="lambdas.Multiplicar"/>
-    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
     <fullyQualifiedTypeName name="java.util.function.Supplier"/>
     <fullyQualifiedTypeName name="classe.Produto"/>
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
@@ -40,17 +36,14 @@
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.Tabuleiro"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.excecao.ExplosaoException"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.TabuleiroConsole"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.excecao.SairException"/>
     <fullyQualifiedTypeName name="generics.Caixa"/>
     <fullyQualifiedTypeName name="generics.CaixaNumero"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="generics.ListaUtil"/>
     <fullyQualifiedTypeName name="java.util.SortedSet"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="exercicio1.CarroEletrico"/>
     <fullyQualifiedTypeName name="exercicio.Calculadora"/>
+    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="padroes.observer.ObeservadorChegadaAniversariante"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
 </qualifiedTypeNameHistroy>
