@@ -22,12 +22,8 @@ public class Observador {
 		JButton botao = new JButton("Clicar!");
 		janela.add(botao);
 		
-		botao.addActionListener(new ActionListener() {
-			
-			public void actionPerformed(ActionEvent e) {
-				System.out.println("Evento ocorreu");
-			}
-			  
+		botao.addActionListener(e -> {
+			System.out.println("Evento ocorreu!!!");
 		});
 		
 		janela.addFocusListener(new FocusListener() {
