@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+import org.w3c.dom.events.MouseEvent;
+
 public class Tabuleiro implements CampoObservador {
 
 	private final int linhas;
@@ -109,7 +111,14 @@ public class Tabuleiro implements CampoObservador {
 	private void mostrarMinas() {
 		campos.stream()
 			.filter(c -> c.isMinado())
+			.filter(c -> !c.isMarcado())
 			.forEach(c -> c.setAberto(true));
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

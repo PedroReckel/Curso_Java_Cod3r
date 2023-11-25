@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-    <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
     <fullyQualifiedTypeName name="excecao.Aluno"/>
     <fullyQualifiedTypeName name="excecao.personalizadaA.NumeroForaIntervaloException"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
@@ -46,7 +42,6 @@
     <fullyQualifiedTypeName name="java.awt.event.FocusListener"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.CampoObeservador"/>
-    <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.CampoEvento"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.function.Consumer"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.ResultadoEvento"/>
@@ -59,5 +54,10 @@
     <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.BotaoCampo"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.CampoObservador"/>
     <fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
     <fullyQualifiedTypeName name="org.w3c.dom.events.MouseEvent"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.CampoEvento"/>
+    <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
 </qualifiedTypeNameHistroy>

@@ -1,22 +1,23 @@
 package br.com.epsilon.cm.visao;
 
 import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-
-import org.w3c.dom.events.MouseEvent;
+import javax.swing.SwingUtilities;
 
 import br.com.epsilon.cm.modelo.Campo;
 import br.com.epsilon.cm.modelo.CampoEvento;
 import br.com.epsilon.cm.modelo.CampoObservador;
 
 @SuppressWarnings("serial")
-public class BotaoCampo extends JButton implements CampoObservador, MouseEvent { // O BotaoCampo precisa ser notificado sempre que acontecer algum evento com o campo associado
+public class BotaoCampo extends JButton implements CampoObservador, MouseListener { // O BotaoCampo precisa ser notificado sempre que acontecer algum evento com o campo associado
 
 	private final Color BG_PADRAO = new Color(184, 184, 184);
 	private final Color BG_MARCAR = new Color(8, 179, 247);
-	private final Color BG_explodir = new Color(189, 66, 68);
+	private final Color BG_EXPLODIR = new Color(189, 66, 68);
 	private final Color TEXTO_VERDE = new Color(0, 100, 0);
 	
 	private Campo campo;
@@ -24,6 +25,7 @@ public class BotaoCampo extends JButton implements CampoObservador, MouseEvent {
 	public BotaoCampo(Campo campo) {
 		this.campo = campo;
 		setBackground(BG_PADRAO); 
+		setOpaque(true);
 		setBorder(BorderFactory.createBevelBorder(0));
 		
 		addMouseListener(this);
@@ -43,35 +45,74 @@ public class BotaoCampo extends JButton implements CampoObservador, MouseEvent {
 			break;
 		default:
 			aplicarEstiloPadrao();
-		} 
+		}
+		
+//		 Garantir que os campos estejam relamente atualizados 
+//		 Isso força o componente a ser renderizado na tela
+		SwingUtilities.invokeLater(() -> {
+			repaint();
+			validate();
+		});
 	}
 
 	private void aplicarEstiloPadrao() {
-		// TODO Auto-generated method stub
-		
+		setBackground(BG_PADRAO);
+		setBorder(BorderFactory.createBevelBorder(0));
+		setText("");
 	}
 
 	private void aplicarEstiloExplodir() {
-		// TODO Auto-generated method stub
-		
+		setBackground(BG_EXPLODIR);
+		setForeground(Color.WHITE);
+		setText("X");
 	}
 
 	private void aplicarEstiloMarcar() {
-		// TODO Auto-generated method stub
-		
+		setBackground(BG_MARCAR);
+		setForeground(Color.BLACK);
+		setText("M");
 	}
 
 	private void aplicarEstiloAbrir() {
+		setBackground(BG_PADRAO);
+		setBorder(BorderFactory.createLineBorder(Color.GRAY));
 		
+		if(campo.isMinado()) {
+			setBackground(BG_EXPLODIR);
+			return;
+		}
+		
+		// Saber quantos vizinhos tem um campo
+			switch (campo.minasNaVizinhaca()) {
+			case 1: 
+				setForeground(TEXTO_VERDE);
+				break;
+			case 2:
+				setForeground(Color.BLUE);
+				break;
+			case 3:
+				setForeground(Color.YELLOW);
+				break;
+			case 4:
+			case 5:
+			case 6:
+				setForeground(Color.RED);
+				break;
+			default:
+				setForeground(Color.PINK);
+			}
+		
+			String valor = !campo.vizinhacaSegura() ? campo.minasNaVizinhaca() + "" : "";
+			setText(valor);
 	}
 	
 	// Interface dos eventos do Mouse
 	@Override
 	public void mousePressed(MouseEvent e) {
 		if(e.getButton() == 1) {
-			System.out.println("Botão esquerdo!");
+			campo.abrir();
 		} else {
-			System.out.println("Outro botão!");
+			campo.alternarMarcacao();
 		}
 	}
 	
@@ -79,5 +120,11 @@ public class BotaoCampo extends JButton implements CampoObservador, MouseEvent {
 	public void mouseEntered(MouseEvent e) {}
 	public void mouseExited(MouseEvent e) {}
 	public void mouseReleased(MouseEvent e) {}
+
+	@Override
+	public void mousePressed(org.w3c.dom.events.MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
