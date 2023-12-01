@@ -9,9 +9,9 @@ import javax.swing.JButton;
 @SuppressWarnings("serial")
 public class Botao extends JButton {
 	
-	public Botao(String texto, Color cor) {
+	public Botao(String texto, Color cor, int fontSize) {
 		setText(texto);
-		setFont(new Font("courier", Font.PLAIN, 25));
+		setFont(new Font("courier", Font.PLAIN, fontSize));
 		setOpaque(true);
 		setBackground(cor);
 		setForeground(Color.WHITE);

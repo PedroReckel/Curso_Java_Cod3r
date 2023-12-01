@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
     <fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
@@ -24,22 +21,17 @@
     <fullyQualifiedTypeName name="exercicio1.CarroEletrico"/>
     <fullyQualifiedTypeName name="exercicio.Calculadora"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="padroes.observer.ObeservadorChegadaAniversariante"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="java.awt.event.FocusListener"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.CampoObeservador"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.function.Consumer"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.ResultadoEvento"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.TelaPrincipal"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.Tabuleiro"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.PainelTabuleiro"/>
-    <fullyQualifiedTypeName name="javax.swing.JButton"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.visao.BotaoCampo"/>
     <fullyQualifiedTypeName name="br.com.epsilon.cm.modelo.CampoObservador"/>
     <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
     <fullyQualifiedTypeName name="java.awt.GridBagLayout"/>
     <fullyQualifiedTypeName name="java.awt.GridBagConstraints"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.calc.modelo.MemoriaObservador"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.calc.modelo.Memoria"/>
 </qualifiedTypeNameHistroy>
