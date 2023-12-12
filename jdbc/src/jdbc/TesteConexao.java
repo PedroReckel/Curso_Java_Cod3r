@@ -10,7 +10,7 @@ public class TesteConexao {
 		
 		final String url = "jdbc:postgresql://localhost:5432/";
 		final String usuario = "postgres";
-		final String senha = "";
+		final String senha = "sys@dmin";
 		
 		Connection conexao = DriverManager.getConnection(url, usuario, senha);
 		
