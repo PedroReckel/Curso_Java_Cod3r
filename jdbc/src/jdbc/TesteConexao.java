@@ -8,8 +8,8 @@ public class TesteConexao {
 
 	public static void main(String[] args) throws SQLException{ // Caso a conexão der errado ele não vai quebrar a conexão
 		
-		final String url = "jdbc:postgresql://localhost:5432/";
-		final String usuario = "postgres";
+		final String url = "";
+		final String usuario = "";
 		final String senha = "";
 		
 		Connection conexao = DriverManager.getConnection(url, usuario, senha);

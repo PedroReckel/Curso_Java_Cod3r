@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+// O pradrão DAO tem como objetivo isolar todo o código de acesso ao banco forncendo para a aplicação metodos de mais alto nivel de facil chamada 
+
 public class DAO {
 
 	private Connection conexao;
@@ -18,13 +20,22 @@ public class DAO {
 				ResultSet resultado = stmt.getGeneratedKeys();
 				
 				if(resultado.next()) {
-					return resultado.getInt(1);
+					return resultado.getInt(1); // Pegar a primeira coluna que foi retornada na minha consulta
 				}
 			}
 			
-			return -1;
+			return -1; // Caso não tenha conseguido atualizar e tenha uma chave retornada vou retornar -1
 		} catch (SQLException e) {
 			throw new RuntimeException();
+		}
+	}
+	
+	public void close() {
+		try {
+			getConexao().close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
