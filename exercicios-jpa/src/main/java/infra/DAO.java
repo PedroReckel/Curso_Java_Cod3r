@@ -11,6 +11,7 @@ public class DAO<E> {
 
 	private static EntityManagerFactory emf;
 	private EntityManager em;
+	
 	private Class<E> classe;
 	
 	static { // O bloco estatico vai ser chamado quando a classe for chamada pelo Java
@@ -48,6 +49,10 @@ public class DAO<E> {
 	// Esse incluir já vai considerar a abertura e o fechamado da transação 
 	public DAO<E> incluirAtomico(E entidade) {
 		return this.abrirT().incluir(entidade).fecharT();
+	}
+	
+	public E obterPorId(Object id) {
+		return em.find(classe, id);
 	}
 	
 	public List<E> obterTodos() {
