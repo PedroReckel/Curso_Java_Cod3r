@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -20,7 +21,12 @@ public class Pedido {
 	@Column(nullable = false)
 	private Date data;
 	
-	@OneToMany(mappedBy = "pedido") // Relação bidirecional
+	// Quando eu deixo a relação como LAZY a relação só será chamada quando eu  
+	// de fato chamar ela. Se eu deixar como EAGER ele chamará os dados da 
+	// relação automaticamente ao chamar a entidade pai (Para um). 
+	// Usar o EAGER aumentará o consumo de memoria. Só deverá usar ele quando 
+	// necessário. O Ideal é usar sempre o LAZY (Mais informações: Aula 351)
+	@OneToMany(mappedBy = "pedido", fetch = FetchType.LAZY)  // Relação bidirecional
 	private List<ItemPedido> itens;
 
 	public Pedido() {

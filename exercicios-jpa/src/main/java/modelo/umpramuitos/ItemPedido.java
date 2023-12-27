@@ -2,6 +2,7 @@ package modelo.umpramuitos;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -19,7 +20,12 @@ public class ItemPedido {
 	@ManyToOne
 	private Pedido pedido;
 	
-	@ManyToOne
+	// Quando eu deixo a relação como LAZY a relação só será chamada quando eu  
+	// de fato chamar ela. Se eu deixar como EAGER ele chamará os dados da 
+	// relação automaticamente ao chamar a entidade pai (Para um). 
+	// Usar o EAGER aumentará o consumo de memoria. Só deverá usar ele quando 
+	// necessário. O Ideal é usar sempre o LAZY (Mais informações: Aula 351)
+	@ManyToOne(fetch = FetchType.EAGER)
 	private Produto produto;
 	
 	@Column(nullable = false)
