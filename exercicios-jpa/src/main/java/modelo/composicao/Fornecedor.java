@@ -22,6 +22,11 @@ public class Fornecedor {
 		
 	}
 
+	public Fornecedor(String nome, Endereco endereco) {
+		this.nome = nome;
+		this.endereco = endereco;
+	}
+	
 	public Long getId() {
 		return id;
 	}

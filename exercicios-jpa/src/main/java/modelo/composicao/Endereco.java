@@ -10,6 +10,15 @@ public class Endereco {
 	private String logradouro;
 	private String complemento;
 	
+	public Endereco() {
+		
+	}
+	
+	public Endereco(String logradouro, String complemento) {
+		this.logradouro = logradouro;
+		this.complemento = complemento;
+	}
+
 	public String getLogradouro() {
 		return logradouro;
 	}

@@ -21,6 +21,8 @@
 		<class>modelo.composicao.Fornecedor</class>
 		<class>modelo.composicao.Funcionario</class>
 		<class>modelo.composicao.Endereco</class>
+		<class>modelo.heranca.Animal</class>
+		<class>modelo.heranca.Pet</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver"

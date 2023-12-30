@@ -22,9 +22,7 @@ public class Funcionario {
 		
 	}
 
-	public Funcionario(Long id, String nome, Endereco endereco) {
-		super();
-		this.id = id;
+	public Funcionario(String nome, Endereco endereco) {
 		this.nome = nome;
 		this.endereco = endereco;
 	}
