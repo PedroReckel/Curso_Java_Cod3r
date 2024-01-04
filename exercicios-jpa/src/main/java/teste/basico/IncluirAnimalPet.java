@@ -7,7 +7,7 @@ public class IncluirAnimalPet {
 
 	public static void main(String[] args) {
 		
-		Pet pet1 = new Pet("Chop", "Dog");
+		Pet pet1 = new Pet("Mingau", "Cat");
 		
 		DAO<Object> dao = new DAO<>();
 		
