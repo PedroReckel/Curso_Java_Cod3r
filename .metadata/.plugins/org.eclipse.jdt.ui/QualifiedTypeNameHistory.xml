@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="modelo.basico.Usuario"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
-    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
-    <fullyQualifiedTypeName name="antlr.collections.List"/>
-    <fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
-    <fullyQualifiedTypeName name="infra.ProdutoDAO"/>
-    <fullyQualifiedTypeName name="org.hibernate.boot.model.convert.internal.ClassBasedConverterDescriptor"/>
-    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
-    <fullyQualifiedTypeName name="modelo.umpraum.Cliente"/>
-    <fullyQualifiedTypeName name="modelo.umpraum.Assento"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="javax.persistence.Column"/>
-    <fullyQualifiedTypeName name="modelo.basico.Produto"/>
-    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="modelo.umpramuitos.Pedido"/>
     <fullyQualifiedTypeName name="org.hibernate.cache.spi.support.AbstractReadWriteAccess.Item"/>
     <fullyQualifiedTypeName name="modelo.umpramuitos.ItemPedido"/>
@@ -33,7 +17,6 @@
     <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
     <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
     <fullyQualifiedTypeName name="modelo.muitospramuitos.Ator"/>
     <fullyQualifiedTypeName name="modelo.muitospramuitos.Filme"/>
@@ -55,9 +38,26 @@
     <fullyQualifiedTypeName name="modelo.heranca.Pet"/>
     <fullyQualifiedTypeName name="modelo.heranca.Animal"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.interno.OperacoesAritmeticas"/>
-    <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.Calculadora"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="br.com.epsilon.app.logging.Logger"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.interno.OperacoesAritmeticas"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.Calculadora"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.app.financeiro.SuperHeroi"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.CalculadoraImpl"/>
+    <fullyQualifiedTypeName name="java.util.ServiceLoader"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.app.Calculadora"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
+    <fullyQualifiedTypeName name="java.awt.Label"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+    <fullyQualifiedTypeName name="javafx.scene.Scene"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.HBox"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
 </qualifiedTypeNameHistroy>

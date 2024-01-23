@@ -1,0 +1,14 @@
+.conteudo {
+	-fx-background-color: #000000;
+	-fx-font-family: Oswald;
+}
+
+.numero {	
+	-fx-text-fill: #eee;
+	-fx-font-size: 22px;
+}
+
+.contador {
+	-fx-text-fill: #eee;
+	-fx-font-size: 15px;
+}

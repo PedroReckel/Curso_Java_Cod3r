@@ -13,7 +13,7 @@ import br.com.epsilon.erp.model.Empresa;
 public class SchemaGeneration {
 
 	public static void main(String[] args) throws HibernateException {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("AlgaWorksPU");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("Curso_JSF_PrimeFaces");
 		
 		EntityManager em = emf.createEntityManager();
 		
