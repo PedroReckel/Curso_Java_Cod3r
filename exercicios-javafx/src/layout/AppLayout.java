@@ -1,16 +1,23 @@
 package layout;
 
 import javafx.application.Application;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class AppLayout extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		Parent raiz = null;
 		
-		Scene pricipal = new Scene(new TesteAnchorPane(), 800, 600);
+		raiz = new TesteAnchorPane();
+		raiz = new TesteBorderPane();
+		raiz = new TesteFlowPane();
+		raiz = new TesteGridPane();
 		
+		Scene pricipal = new Scene(raiz, 800, 600);
 		primaryStage.setScene(pricipal);
 		primaryStage.setTitle("Gerenciadores de Layout");
 		primaryStage.show();
