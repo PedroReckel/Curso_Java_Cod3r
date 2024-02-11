@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="modelo.consulta.NotaFilme"/>
-    <fullyQualifiedTypeName name="javax.persistence.Table"/>
-    <fullyQualifiedTypeName name="javax.annotation.processing.Generated"/>
-    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-    <fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
-    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
-    <fullyQualifiedTypeName name="modelo.composicao.Funcionario"/>
-    <fullyQualifiedTypeName name="modelo.composicao.Fornecedor"/>
-    <fullyQualifiedTypeName name="modelo.composicao.Endereco"/>
-    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.Id"/>
-    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
-    <fullyQualifiedTypeName name="javax.persistence.Inheritance"/>
-    <fullyQualifiedTypeName name="javax.persistence.InheritanceType"/>
     <fullyQualifiedTypeName name="infra.DAO"/>
     <fullyQualifiedTypeName name="modelo.heranca.Pet"/>
     <fullyQualifiedTypeName name="modelo.heranca.Animal"/>
@@ -24,7 +10,6 @@
     <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.interno.OperacoesAritmeticas"/>
     <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.Calculadora"/>
     <fullyQualifiedTypeName name="br.com.epsilon.app.financeiro.SuperHeroi"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="br.com.epsilon.app.calculo.CalculadoraImpl"/>
     <fullyQualifiedTypeName name="java.util.ServiceLoader"/>
@@ -36,7 +21,6 @@
     <fullyQualifiedTypeName name="javax.swing.text.DefaultStyledDocument.AttributeUndoableEdit"/>
     <fullyQualifiedTypeName name="java.lang.ThreadDeath"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
-    <fullyQualifiedTypeName name="javafx.application.Application"/>
     <fullyQualifiedTypeName name="javafx.scene.shape.Rectangle"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.Background"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.BackgroundFill"/>
@@ -53,11 +37,27 @@
     <fullyQualifiedTypeName name="javafx.scene.Parent"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.FlowPane"/>
     <fullyQualifiedTypeName name="layout.TesteFlowPane"/>
-    <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
     <fullyQualifiedTypeName name="javafx.geometry.Orientation"/>
-    <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
     <fullyQualifiedTypeName name="layout.TesteBorderPane"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.GridPane"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.ColumnConstraints"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.RowConstraints"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.StackPane"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="javafx.application.Platform"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.TilePane"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="layout.TesteTilePane"/>
+    <fullyQualifiedTypeName name="layout.Quadrado"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
+    <fullyQualifiedTypeName name="javafx.application.Application"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="br.com.epsilon.exerciciossb.models.Cliente"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 </qualifiedTypeNameHistroy>
