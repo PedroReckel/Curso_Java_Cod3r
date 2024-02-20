@@ -25,6 +25,8 @@ public class Produto {
 	@Max(1)
 	@Column(name = "prod_desconto", nullable = false)
 	private Double desconto;
+	@Column(name = "deleted", columnDefinition = "boolean default false")
+	private boolean deleted;
 	
 	public Produto() {
 		super();
@@ -68,5 +70,13 @@ public class Produto {
 	public void setDesconto(Double desconto) {
 		this.desconto = desconto;
 	}
-		
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
+			
 }
