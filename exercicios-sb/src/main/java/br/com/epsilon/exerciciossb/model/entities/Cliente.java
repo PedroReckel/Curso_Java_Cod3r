@@ -1,23 +1,49 @@
 package br.com.epsilon.exerciciossb.model.entities;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+@Table(name = "clientes")
 public class Cliente {
 
-	private int id;
-	private String nome;
-	private String cpf;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	
-	public Cliente(int id, String nome, String cpf) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.cpf = cpf;
+	private String nome;
+	
+	@OneToOne(cascade = CascadeType.PERSIST) // Quando se persistir um cliente ele vai lá e persiste um assento automaticamente
+	@JoinColumn(name = "assento_id", unique = true)
+	@JsonIgnore // Adicionando o JsonIgnore para evitar o loop infinito
+	private Assento assento;
+	@Column(name = "deleted", columnDefinition = "boolean default false")
+	private boolean deleted;
+
+	public Cliente() {
+	
 	}
 
-	public int getId() {
+	public Cliente(String nome, Assento assento) {
+		super();
+		this.nome = nome;
+		this.assento = assento;
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -29,12 +55,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getCpf() {
-		return cpf;
+	public Assento getAssento() {
+		return assento;
 	}
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public void setAssento(Assento assento) {
+		this.assento = assento;
 	}
-		
+	
 }

@@ -15,6 +15,7 @@ public interface ProdutoRepository extends PagingAndSortingRepository<Produto, I
 
     Optional<Produto> findByIdAndDeletedFalse(int id);
    
+    // Aqui tenho que usar "Produto" (nome da minha classe) e não "produtos" (nome da minha tabela)
     @Query("SELECT p FROM Produto p WHERE p.deleted = false")
     Page<Produto> findAllNotDeleted(Pageable  pageble);
     
