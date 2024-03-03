@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.epsilon.exerciciossb.model.entities.Produto;
+import br.com.epsilon.exerciciossb.model.repositories.ApiResponse;
 import br.com.epsilon.exerciciossb.model.repositories.ProdutoRepository;
 
 @RestController
@@ -32,7 +34,7 @@ public class ProdutoController {
 	}
 	
 	@GetMapping(path="/nome/{parteNome}")
-	public Iterable<Produto>  obterProdutosPorNome(@PathVariable String parteNome) {
+	public Iterable<Produto> obterProdutosPorNome(@PathVariable String parteNome) {
 		return produtoRepository.findByNomeContainingIgnoreCase(parteNome);
 	}
 	
@@ -52,31 +54,38 @@ public class ProdutoController {
 	}
 	
 	@RequestMapping(path = "/excluirProduto/{id}", method = {RequestMethod.PUT})
-	public void excluirProduto(@PathVariable int id) {
+	public ResponseEntity<ApiResponse> excluirProduto(@PathVariable int id) {
 		Produto produto = produtoRepository.findById(id).orElse(null);
 		
 		try {
 			if(produto != null) {
 				produto.setDeleted(true);
 				produtoRepository.save(produto);
+				return ResponseEntity.ok(new ApiResponse(true, "Produto " + id + " apagado com sucesso."));
 			}
 		} catch (EntityNotFoundException e) {
 			e.printStackTrace();
 		}
+		
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse(false, "Produto não encontrado."));
 	}
 
 	@RequestMapping(path = "/recuperarProduto/{id}", method = {RequestMethod.PUT})
-	public void recuperarProduto(@PathVariable int id) {
+	public ResponseEntity<ApiResponse> recuperarProduto(@PathVariable int id) {
 		Produto produto = produtoRepository.findById(id).orElse(null);
 		
 		try {
 			if(produto != null) {
 				produto.setDeleted(false);
 				produtoRepository.save(produto);
+				return ResponseEntity.ok(new ApiResponse(true, "Produto " + id + " recuperado com sucesso."));
 			}
 		} catch (EntityNotFoundException  e) {
 			e.printStackTrace();
 		}
+		
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse(false, "Produto não encontrado."));	
+		
 	}
 		
 }

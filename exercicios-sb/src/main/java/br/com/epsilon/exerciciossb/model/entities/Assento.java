@@ -59,5 +59,13 @@ public class Assento {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
 	
 }
